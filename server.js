@@ -1,6 +1,6 @@
 const express = require ('express');
 const app = express();
-const bodyParser = require('bodyParser');
+const bodyParser = require('body-parser');
 const cors = require('cors');
 
 require('./db/db');
@@ -13,7 +13,7 @@ const corsOptions = {
   credentials: true,
   optionsSuccessStatus: 200
 }
-app.use(cors(CorsOptions));
+app.use(cors(corsOptions));
 
 
 app.listen(9000, () => {
