@@ -16,7 +16,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 
-const userController = require('./controllers/userController');
+const photoController = require('./controllers/photoController');
 const authController = require('./controllers/authController');
 
 app.listen(9000, () => {
