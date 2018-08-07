@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://127.0.0.1:27017/moviesOne', {useNewUrlParser: true});
+mongoose.connect('mongodb://127.0.0.1:27017/photosdb', {useNewUrlParser: true});
 
 mongoose.connection.on('connected', () => {
   console.log('Mongoose is connected')
