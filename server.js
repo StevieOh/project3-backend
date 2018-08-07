@@ -26,7 +26,7 @@ const photoController = require('./controllers/photoController');
 const authController = require('./controllers/authController');
 
 app.use('/api/v1/photos', photoController)
-app.use('auth/login', authController);
+app.use('/auth', authController);
 
 app.listen(9000, () => {
   console.log("listening on port 9000")
