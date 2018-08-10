@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const session = require('express-session')
 
+const PORT = process.env.PORT || 9000;
+
 require('./db/db');
 app.use(session({
   secret: 'knights of the round table',
